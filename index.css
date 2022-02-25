@@ -1,0 +1,554 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .contain {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+header .contain .logo img {
+    width: 70%;
+}
+
+header .contain .btns button {
+    outline: none;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+section.one .contain {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+section.one .contain .pic img {
+    width: 100%;
+}
+
+section.one .contain .content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+section.one .contain .content h1 {
+    font-size: 40px;
+}
+
+section.one .contain .content p {
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+section.one .contain .content .btns button {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 2px 2px 15px 10px hsl(322, 63%, 92%);
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+section.one .contain .content .btns button:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+
+section.one .contain .numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+section.one .contain .numbers .num {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+}
+
+section.one .contain .numbers .num .icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section.one .contain .numbers .num .icon img {
+    width: 20%;
+}
+
+section.one .contain .numbers .num span {
+    font-size: 60px;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.one .contain .numbers .num p {
+    flex-wrap: nowrap;
+}
+
+section.two .contain {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+section.two.uncolor .contain {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+section.two.color .contain {
+    background-color: hsl(207, 100%, 98%);
+}
+
+section.two .contain::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -160px;
+    width: 100%;
+    height: 160px;
+    background-image: url('./images/bg-section-top-desktop-1.svg');
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+}
+
+section.two.color:nth-child(5) .contain::after {
+    background-image: url('./images/bg-section-top-desktop-2.svg');
+}
+
+section.two .contain::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    width: 100%;
+    height: 150px;
+    background-image: url('./images/bg-section-bottom-desktop-1.svg');
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.two.color:nth-child(5) .contain::before {
+    background-image: url('./images/bg-section-bottom-desktop-2.svg');
+}
+
+section.two .contain .content {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+section.two .contain .content h3 {
+    font-size: 25px;
+}
+
+section.two .contain .pic img {
+    width: 100%;
+}
+
+.popup .contain {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.popup .contain h3 {
+    font-size: 25px;
+}
+
+.popup .contain .btns button {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 2px 2px 15px 10px hsl(322, 63%, 92%);
+    padding: 15px 50px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.popup .contain .btns button:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+
+footer .contain {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: hsl(192, 100%, 9%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+footer .contain::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -150px;
+    height: 150px;
+    width: 100%;
+    background-image: url('./images/bg-footer-top-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+footer .contain .part-one {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+
+footer .contain .part-one .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+}
+
+footer .contain .part-one .logo .icon img {
+    width: 75%;
+}
+
+footer .contain .part-one .logo .name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+footer .contain .part-one p {
+    font-size: 15px;
+    width: 60%;
+    left: 0;
+}
+
+footer .contain .part-one .part {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .contain .part-two {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+
+footer .contain .part-two h4 {
+    font-size: 22px;
+}
+
+footer .contain .part-two p {
+    font-size: 15px;
+    width: 58%;
+}
+
+footer .contain .part-two form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .contain .part-two form input {
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+footer .contain .part-two form input[type='submit'] {
+    background-color: hsl(322, 100%, 66%);
+}
+
+footer .contain .part-two form input[type='submit']:hover {
+    background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+
+.contain {
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+@media (max-width:992px) {
+    header .contain {
+        gap: 40px;
+    }
+    header .contain .btns button {
+        padding: 10px 18px;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+    section.one .contain {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+    section.one .contain .content h1 {
+        font-size: 40px;
+    }
+    section.one .contain .content p {
+        width: 60%;
+    }
+    section.one .contain .content .btns button {
+        border-radius: 25px;
+        color: #fff;
+        font-size: 12px;
+        padding: 12px 40px;
+    }
+    section.one .contain .numbers {
+        gap: 300px;
+    }
+    section.one .contain .numbers .num {
+        justify-content: stretch;
+    }
+    section.one .contain .numbers .num .icon {
+        justify-content: flex-start;
+    }
+    section.one .contain .numbers .num span {
+        font-size: 50px;
+        justify-content: flex-start;
+    }
+    section.two .contain {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+    section.two.uncolor .contain {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    section.two .contain::after {
+        background-image: url('./images/bg-section-top-desktop-1.svg');
+    }
+    section.two.color:nth-child(5) .contain::after {
+        background-image: url('./images/bg-section-top-desktop-2.svg');
+    }
+    section.two .contain::before {
+        background-image: url('./images/bg-section-bottom-desktop-1.svg');
+    }
+    section.two.color:nth-child(5) .contain::before {
+        background-image: url('./images/bg-section-bottom-desktop-2.svg');
+    }
+    section.two .contain .content {
+        justify-content: flex-start;
+    }
+    section.two .contain .content h3 {
+        font-size: 22px;
+    }
+    .popup .contain {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .popup .contain h3 {
+        font-size: 22px;
+    }
+    .popup .contain .btns button {
+        border-radius: 25px;
+        font-size: 12px;
+        padding: 12px 40px;
+    }
+    footer .contain {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    footer .contain::after {
+        top: -120px;
+        height: 120px;
+        background-image: url('./images/bg-footer-top-desktop.svg');
+    }
+    footer .contain .part-one .logo .icon img {
+        width: 75%;
+    }
+    footer .contain .part-one .logo .name {
+        font-size: 22px;
+    }
+    footer .contain .part-one p {
+        font-size: 12px;
+        width: 70%;
+    }
+    footer .contain .part-two h4 {
+        font-size: 20px;
+    }
+    footer .contain .part-two p {
+        font-size: 12px;
+        width: 65%;
+    }
+    footer .contain .part-two form input {
+        padding: 10px 30px;
+    }
+    .contain {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    header .contain {
+        gap: 30px;
+    }
+    header .contain .btns button {
+        padding: 8px 15px;
+        font-size: 10px;
+        border-radius: 20px;
+    }
+    section.one .contain {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    section.one .contain .content h1 {
+        font-size: 35px;
+    }
+    section.one .contain .content p {
+        width: 70%;
+    }
+    section.one .contain .content .btns button {
+        border-radius: 20px;
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    section.one .contain .numbers {
+        gap: 200px;
+    }
+    section.one .contain .numbers .num {
+        justify-content: center;
+    }
+    section.one .contain .numbers .num .icon {
+        justify-content: center;
+    }
+    section.one .contain .numbers .num span {
+        font-size: 40px;
+        justify-content: center;
+    }
+    section.two .contain {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    section.two.uncolor .contain {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    section.two .contain::after {
+        background-image: url('./images/bg-section-top-mobile-1.svg');
+    }
+    section.two.color:nth-child(5) .contain::after {
+        background-image: url('./images/bg-section-top-mobile-2.svg');
+    }
+    section.two .contain::before {
+        background-image: url('./images/bg-section-bottom-mobile-1.svg');
+    }
+    section.two.color:nth-child(5) .contain::before {
+        background-image: url('./images/bg-section-bottom-mobile-2.svg');
+    }
+    section.two .contain .content {
+        justify-content: center;
+    }
+    section.two .contain .content h3 {
+        font-size: 20px;
+    }
+    .popup .contain {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .popup .contain h3 {
+        font-size: 20px;
+    }
+    .popup .contain .btns button {
+        border-radius: 20px;
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    footer .contain {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    footer .contain::after {
+        top: -120px;
+        height: 120px;
+        background-image: url('./images/bg-footer-top-mobile.svg');
+    }
+    footer .contain .part-one .logo .icon img {
+        width: 75%;
+    }
+    footer .contain .part-one .logo .name {
+        font-size: 20px;
+    }
+    footer .contain .part-one p {
+        font-size: 10px;
+        width: 80%;
+    }
+    footer .contain .part-two h4 {
+        font-size: 18px;
+    }
+    footer .contain .part-two p {
+        font-size: 10px;
+        width: 75%;
+    }
+    .contain {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
